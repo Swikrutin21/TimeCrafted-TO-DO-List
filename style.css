@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+}
+.container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container .menubar{
+   display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 20px rgba(128, 128, 128, 0.437);
+}
+
+.profile_sec{
+    display: flex;
+}
+.name_case{
+    margin: 13px;
+    display: grid;
+}
+.box{
+  padding: 10px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.change{
+    display: flex;
+    flex-direction: column;
+    
+    padding:20px;
+}
+.input-wrapper{
+    padding: 10px;
+    margin: 10px 70px;
+}
+.input-wrapper input , .input-wrapper select {
+    padding: 7px;
+    margin: 5px;
+    font-size: 17px;
+    border: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.input-wrapper button{
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 10px 20px 8px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.input-wrapper button:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+.input-wrapper button:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+
+.right-area{
+    padding: 10px;
+    background-color:rgb(244, 244, 244);
+    width: 500px;
+}
+.notes-header {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.notes-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.notes-input textarea {
+    width: 75%; /* Adjust the width as needed */
+    padding: 8px;
+}
+
+.notes-input button {
+    background-color:  rgba(222, 184, 135, 0.995);
+    color: rgb(255, 255, 254);
+    border: none;
+    border: 2px rgb(225, 177, 115) double;
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.note-card{
+    padding: 0px 10px 0px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    height: fit-content;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Define color classes */
+.note-card-green {
+    background-color: rgba(126, 252, 0, 0.404);
+  }
+  
+  .note-card-blue {
+    background-color: #5ecefb90;
+  }
+  
+  .note-card-red {
+    background-color: #ea63976e;
+  }
+  
+  .note-card-orange {
+    background-color: #feaf6a72;
+  }
+  
+  
+.delete-button {
+    color:whitesmoke;
+    border: white 2px solid;
+    background-color: rgba(248, 242, 232, 0.007);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 4px;
+  }
+  
+  .delete-button:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+  
+
+
+#showToday{
+    color: gray;
+    font-size: 20px;
+}
+#date-time {
+    font-size: 32px;
+    margin-left: 20px ;
+}
+
+/* Custom styles for task items */
+.task-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the completed tasks with a line-through effect */
+.completedTask {
+    text-decoration: line-through;
+    color: grey;
+}
+
+/* Adjust the appearance of the task labels */
+.task-item label {
+    flex: 1; /* Expand to fill available space */
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Style the task checkboxes */
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+ 
+/* Style the task name */
+.task-name {
+    font-size: 18px; /* Customize the font size */
+    color: #333; /* Customize the text color */
+}
+
+/* Style the due date */
+.due-date {
+    font-size: 16px; /* Customize the font size */
+    color: #555; /* Customize the text color */
+}
+
+/* Style the priority */
+.priority {
+    font-size: 14px; /* Customize the font size */
+    color: #777; /* Customize the text color */
+}
